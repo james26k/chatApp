@@ -13,6 +13,14 @@ class User
     "#{@first_name} #{@last_name}"
   end
 
+  def alphabetical_name
+    "#{@first_name}, #{@last_name}"
+  end
+
+  def compare_name
+    full_name.split == alphabetical_name.split(", ").reverse
+  end
+
   def formatted_email
     "#{@full_name} <#{@email}>"
   end
