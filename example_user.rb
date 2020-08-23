@@ -1,4 +1,6 @@
 class User
+  #UserとEmailに対応するaccessorを作成する
+  #Getter, Setterをそれぞれ定義してくれる
   attr_accessor :name, :email
 
   def initialize(attributes = {})
